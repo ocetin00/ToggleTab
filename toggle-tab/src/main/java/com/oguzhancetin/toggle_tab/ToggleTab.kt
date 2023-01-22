@@ -1,5 +1,6 @@
 package com.oguzhancetin.toggle_tab
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 
 /**
@@ -32,7 +33,7 @@ import androidx.compose.ui.text.font.FontWeight
 
 @Preview
 @Composable
-fun ToggleTabPreview() {
+fun ToggleTabPreview1() {
     var selectedPageIndex by remember {
         mutableStateOf(1)
     }
@@ -55,8 +56,11 @@ fun ToggleTabPreview() {
                 onTabSelected = { index ->
                     selectedPageIndex = index
                 },
-                titleList = listOf("Tümü", "ConnectTruck", "Bağlı Değil"),
-                tabItemTextStyle = TextStyle.Default.copy(fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                titleList = listOf("First", "Second", "Third"),
+                tabItemTextStyle = TextStyle.Default.copy(
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
             )
         }
         var backgroundColor: Color = when (selectedPageIndex) {
@@ -78,12 +82,51 @@ fun ToggleTabPreview() {
     }
 }
 
+@Preview
+@Composable
+fun ToggleTabPreview2() {
+    Row(
+        horizontalArrangement = Arrangement.Center,
+        modifier = Modifier
+            .padding(top = 10.dp)
+            .fillMaxWidth()
+    ) {
+        ToggleTab(modifier = Modifier.fillMaxWidth(0.6f),titleList = listOf("Male", "Famele"), onTabSelected = {})
+    }
+}
+
+@Preview
+@Composable
+fun ToggleTabPreview3() {
+    Row(
+        modifier = Modifier
+            .padding(top = 10.dp)
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.Center
+    ) {
+        ToggleTab(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 0.9f),
+            containerColor = Color.Blue,
+            selectedColor = Color.White,
+            onTabSelected = { index ->
+                Log.e("selectedIndex", "selectedIndex: ${index.toString()}")
+            },
+            titleList = listOf("First", "Second", "Third"),
+            tabItemTextStyle = TextStyle.Default.copy(
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold
+            )
+        )
+    }
+}
+
 @Composable
 fun ToggleTab(
     modifier: Modifier = Modifier,
     titleList: List<String>,
     initialSelectedTabIndex: Int = 0,
-    tabItemTextStyle: TextStyle = TextStyle.Default,
+    tabItemTextStyle: TextStyle? = null,
     containerColor: Color = Color.Blue.copy(alpha = 0.5f),
     selectedColor: Color = Color.White,
     onTabSelected: (Int) -> Unit
@@ -94,7 +137,6 @@ fun ToggleTab(
 
         TabRow(selectedTabIndex = currentTabIndex,
             modifier = modifier
-                .fillMaxWidth(fraction = 0.9f)
                 .clip(ShapeDefaults.ExtraLarge),
             containerColor = containerColor,
             indicator = {
@@ -105,7 +147,7 @@ fun ToggleTab(
                         .fillMaxSize()
                         .clip(ShapeDefaults.ExtraLarge)
                         .background(selectedColor)
-                        .border(0f.dp, Color.Blue.copy(alpha = 0.5f), ShapeDefaults.ExtraLarge)
+                        .border(0f.dp, containerColor, ShapeDefaults.ExtraLarge)
                 )
             },
             divider = {}
@@ -122,7 +164,11 @@ fun ToggleTab(
                     selectedContentColor = Color.Transparent,
                     modifier = tabModifier,
                     selected = false,
-                    text = { Text(text = title, color = textColor, style = tabItemTextStyle) },
+                    text = {
+                        tabItemTextStyle?.let {
+                            Text(text = title, color = textColor, style = tabItemTextStyle)
+                        } ?: Text(text = title, color = textColor)
+                    },
                     onClick = {
                         currentTabIndex = index
                         onTabSelected(index)
