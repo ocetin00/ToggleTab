@@ -1,7 +1,7 @@
 <h1 align="center">Toggle-Tab </h1></br>
 
 <p align="center">
-:toggle-tab: Toggle Tab
+Toggle Tab
 </p>
 </br>
 
@@ -14,7 +14,7 @@
 
 
 <p align="center">
-https://github.com/ocetin00/temp/blob/main/WhatsApp%20Video%202023-01-22%20at%2021.08.08.mp4
+<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="280"/>
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Image%202023-01-22%20at%2021.23.12.jpeg" width="280"/>
 </p>
 
