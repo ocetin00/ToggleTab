@@ -19,7 +19,6 @@ dependencies {
 </details>
 
 ## How to Use
-Balloon supports both Kotlin and Java projects, so you can reference it by your language.
 
 ### Create Balloon with Kotlin
 We can create an instance of the Balloon with the `Balloon.Builder` class.
@@ -51,22 +50,17 @@ We can also create an instance of the Balloon with the Kotlin DSL.
 
 You can create an instance of the Balloon with `createBalloon` as the example below:
 ```kotlin
-val balloon = createBalloon(context) {
-  setWidthRatio(1.0f)
-  setHeight(BalloonSizeSpec.WRAP)
-  setText("Edit your profile here!")
-  setTextColorResource(R.color.white_87)
-  setTextSize(15f)
-  setIconDrawableResource(R.drawable.ic_edit)
-  setArrowPositionRules(ArrowPositionRules.ALIGN_ANCHOR)
-  setArrowSize(10)
-  setArrowPosition(0.5f)
-  setPadding(12)
-  setCornerRadius(8f)
-  setBackgroundColorResource(R.color.skyBlue)
-  setBalloonAnimation(BalloonAnimation.ELASTIC)
-  setLifecycleOwner(lifecycle)
-  build()
+@Preview
+@Composable
+fun ToggleTabPreview2() {
+    Row(
+        horizontalArrangement = Arrangement.Center,
+        modifier = Modifier
+            .padding(top = 10.dp)
+            .fillMaxWidth()
+    ) {
+        ToggleTab(modifier = Modifier.fillMaxWidth(0.6f),titleList = listOf("Male", "Famele"), onTabSelected = {})
+    }
 }
 ```
 </details>
@@ -78,26 +72,58 @@ You can create an instance of the Balloon with Java by using the `Balloon.Builde
  <summary>Keep reading for more details</summary>
 
 You can create an instance of the Balloon as the following example below: 
-```java
+```kotlin
 Balloon balloon = new Balloon.Builder(context)
-    .setArrowSize(10)
-    .setArrowOrientation(ArrowOrientation.TOP)
-    .setArrowPositionRules(ArrowPositionRules.ALIGN_ANCHOR)
-    .setArrowPosition(0.5f)
-    .setWidth(BalloonSizeSpec.WRAP)
-    .setHeight(65)
-    .setTextSize(15f)
-    .setCornerRadius(4f)
-    .setAlpha(0.9f)
-    .setText("You can access your profile from now on.")
-    .setTextColor(ContextCompat.getColor(context, R.color.white_93))
-    .setTextIsHtml(true)
-    .setIconDrawable(ContextCompat.getDrawable(context, R.drawable.ic_profile))
-    .setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary))
-    .setOnBalloonClickListener(onBalloonClickListener)
-    .setBalloonAnimation(BalloonAnimation.FADE)
-    .setLifecycleOwner(lifecycleOwner)
-    .build();
+   @Preview
+@Composable
+fun ToggleTabPreview1() {
+    var selectedPageIndex by remember {
+        mutableStateOf(1)
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)
+    ) {
+        Row(
+            modifier = Modifier
+                .padding(vertical = 20.dp)
+                .fillMaxWidth()
+                .background(Color.White), horizontalArrangement = Arrangement.Center
+        ) {
+            ToggleTab(
+                modifier = Modifier
+                    .fillMaxWidth(fraction = 0.9f)
+                    .clip(ShapeDefaults.ExtraLarge),
+                onTabSelected = { index ->
+                    selectedPageIndex = index
+                },
+                titleList = listOf("First", "Second", "Third"),
+                tabItemTextStyle = TextStyle.Default.copy(
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            )
+        }
+        var backgroundColor: Color = when (selectedPageIndex) {
+            0 -> Color.Green
+            1 -> Color.Magenta
+            2 -> Color.Cyan
+            else -> {
+                Color.Green
+            }
+        }
+        Column(
+            modifier = Modifier
+                .padding(20.dp)
+                .fillMaxSize()
+                .background(backgroundColor)
+        ) {
+
+        }
+    }
+}
 ```
 </details>
 
