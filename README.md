@@ -50,18 +50,18 @@ We can also create an instance of the Balloon with the Kotlin DSL.
 
 You can create an instance of the Balloon with `createBalloon` as the example below:
 ```kotlin
-@Preview
-@Composable
-fun ToggleTabPreview2() {
-    Row(
-        horizontalArrangement = Arrangement.Center,
-        modifier = Modifier
-            .padding(top = 10.dp)
-            .fillMaxWidth()
-    ) {
-        ToggleTab(modifier = Modifier.fillMaxWidth(0.6f),titleList = listOf("Male", "Famele"), onTabSelected = {})
+    @Preview
+    @Composable
+    fun ToggleTabPreview2() {
+        Row(
+            horizontalArrangement = Arrangement.Center,
+            modifier = Modifier
+                .padding(top = 10.dp)
+                .fillMaxWidth()
+        ) {
+            ToggleTab(modifier = Modifier.fillMaxWidth(0.6f),titleList = listOf("Male", "Famele"), onTabSelected = {})
+        }
     }
-}
 ```
 </details>
 
@@ -127,23 +127,6 @@ fun ToggleTabPreview1() {
 ```
 </details>
 
-### Show up Balloon
-We can show up the Balloon using the functions below. If we use `showAlign__` method, we can show up the Balloon based on alignments (**top, bottom, right, left**). Also, we can adjust specific positions of the Balloon by using `x-Offset` and `y-Offset` parameters. <br>
-
-```kotlin
-balloon.showAlignTop(anchor: View) // shows the balloon on an anchor view as the top alignment.
-balloon.showAlignTop(anchor: View, xOff: Int, yOff: Int) // shows top alignment with x-off and y-off.
-balloon.showAlignBottom(anchor: View) // shows the balloon on an anchor view as the bottom alignment.
-balloon.showAlignBottom(anchor: View, xOff: Int, yOff: Int) // shows bottom alignment with x-off and y-off.
-balloon.showAlignRight(anchor: View) // shows the balloon on an anchor view as the right alignment.
-balloon.showAlignRight(anchor: View, xOff: Int, yOff: Int) // shows right alignment with x-off and y-off.
-balloon.showAlignLeft(anchor: View) // shows the balloon on an anchor view as the left alignment.
-balloon.showAlignLeft(anchor: View, xOff: Int, yOff: Int) // shows left alignment with x-off and y-off.
-balloon.showAsDropDown(anchor: View) // shows the balloon as a dropdown without any alignments.
-balloon.showAsDropDown(anchor: View, xOff: Int, yOff: Int) // shows no alignments with x-off and y-off.
-balloon.showAtCenter(anchor: View, xOff: Int, yOff: Int, centerAlign: BalloonCenterAlign.TOP)
-// shows the balloon over the anchor view (overlap) as the center aligns.
-```
 
 
 ## Find this library useful? :heart:
