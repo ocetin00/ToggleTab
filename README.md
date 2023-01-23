@@ -11,7 +11,7 @@ Add the dependency below to your **module**'s `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation "com.github.skydoves:balloon:1.5.2"
+    implementation "com.github.ocetin00:ToggleTab:1.0.0"
 }
 ```
 
