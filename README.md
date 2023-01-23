@@ -1,11 +1,6 @@
 <h1 align="center">Toggle-Tab </h1></br>
 
 <p align="center">
-Toggle Tab
-</p>
-</br>
-
-<p align="center">
   </a><br>
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
@@ -15,10 +10,7 @@ Toggle Tab
 
 <p align="center">
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="280"/>
-<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Image%202023-01-22%20at%2021.23.12.jpeg" width="280"/>
 </p>
-
-
 
 
 ### Gradle
@@ -52,7 +44,7 @@ dependencies {
     }
 ```
 
-
+<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Image%202023-01-22%20at%2021.23.12.jpeg" width="280"/>
 
 ### Create ToggleTab
 You can create toggle-tab with selected color,container color and text style
