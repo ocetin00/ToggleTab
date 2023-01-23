@@ -1,29 +1,10 @@
 <h1 align="center">Toggle-Tab </h1></br>
 
 <p align="center">
-:balloon: Modernized and sophisticated tooltips, fully customizable with an arrow and animations on Android.
+:toggle-tab: Toggle Tab
 </p>
 </br>
-<p align="center">
-  <a href="https://devlibrary.withgoogle.com/products/android/repos/skydoves-Balloon"><img alt="Google" src="https://skydoves.github.io/badges/google-devlib.svg"/></a>
-  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6881990083344519168/"><img alt="LinkedIn" src="https://skydoves.github.io/badges/linkedin-developers.svg"/></a><br>
-  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
-  <a href="https://android-arsenal.com/api?level=17"><img alt="API" src="https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat"/></a>
-</p> <br>
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/24237865/61194943-f9d70380-a6ff-11e9-807f-ba1ca8126f8a.gif" width="280"/>
-<img src="https://user-images.githubusercontent.com/24237865/61225579-d346b600-a75b-11e9-84f8-3c06047b5003.gif" width="280"/>
-</p>
-
-
-
-## Balloon in Jetpack Compose
-
-If you want to use Balloon in your Jetpack Compose project, check out the **[Balloon in Jetpack Compose](https://github.com/skydoves/Balloon#balloon-in-jetpack-compose-1)** guidelines. You can also check out the blog post **[Tooltips for Jetpack Compose: Improve User Experience to the Next Level](https://medium.com/@skydoves/tooltips-for-jetpack-compose-improve-user-experience-to-the-next-level-68791ab8e07f)** for more details.
-
-## Including in your project
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.skydoves/balloon.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.skydoves%22%20AND%20a:%22balloon%22)
 
 ### Gradle
 Add the dependency below to your **module**'s `build.gradle` file:
@@ -34,28 +15,6 @@ dependencies {
 }
 ```
 
-## SNAPSHOT 
-[![Balloon](https://img.shields.io/static/v1?label=snapshot&message=balloon&logo=apache%20maven&color=C71A36)](https://oss.sonatype.org/content/repositories/snapshots/com/github/skydoves/balloon/) <br>
-
-<details>
- <summary>See how to import the snapshot</summary>
-
-### Including the SNAPSHOT
-Snapshots of the current development version of Balloon are available, which track [the latest versions](https://oss.sonatype.org/content/repositories/snapshots/com/github/skydoves/balloon/).
-
-To import snapshot versions on your project, add the code snippet below on your gradle file.
-```Gradle
-repositories {
-   maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
-}
-```
-
-Next, add the below dependency to your **module**'s `build.gradle` file.
-```gradle
-dependencies {
-    implementation "com.github.skydoves:balloon:1.5.3-SNAPSHOT"
-}
-```
 
 </details>
 
@@ -747,15 +706,14 @@ val builder = rememberBalloonBuilder {
 }
 ```
 
-> **Note**: If you want to use the default form of balloon (icon + text), you should pass a null value to the `balloonContent` parameter of your Balloon composable.
 
 ## Find this library useful? :heart:
-Support it by joining __[stargazers](https://github.com/skydoves/balloon/stargazers)__ for this repository. :star: <br>
-Also, __[follow me](https://github.com/skydoves)__ on GitHub for my next creations! 🤩
+:star: <br>
+Also, __[follow me](https://github.com/ocetin00)__ on GitHub for my next creations! 
 
 # License
 ```xml
-Copyright 2019 skydoves (Jaewoong Eum)
+Copyright 2019 ocetin00 (Oğuzhan Çetin)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
