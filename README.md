@@ -5,6 +5,22 @@
 </p>
 </br>
 
+<p align="center">
+  <a href="https://devlibrary.withgoogle.com/products/android/repos/skydoves-Balloon"><img alt="Google" src="https://skydoves.github.io/badges/google-devlib.svg"/></a>
+  <a href="https://www.linkedin.com/feed/update/urn:li:activity:6881990083344519168/"><img alt="LinkedIn" src="https://skydoves.github.io/badges/linkedin-developers.svg"/></a><br>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+  <a href="https://android-arsenal.com/api?level=17"><img alt="API" src="https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat"/></a>
+</p> <br>
+
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/24237865/61194943-f9d70380-a6ff-11e9-807f-ba1ca8126f8a.gif" width="280"/>
+<img src="https://user-images.githubusercontent.com/24237865/61225579-d346b600-a75b-11e9-84f8-3c06047b5003.gif" width="280"/>
+</p>
+
+
+
 
 ### Gradle
 Add the dependency below to your **module**'s `build.gradle` file:
