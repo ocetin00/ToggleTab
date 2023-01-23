@@ -1,5 +1,4 @@
 <h1 align="center">ToggleTab </h1></br>
-
 <p align="center">
   </a><br>
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
@@ -7,7 +6,7 @@
 </p> <br>
 
 <p align="center">
-<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="280"/>
+<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="250"/>
 </p>
 
 ## How to Use
