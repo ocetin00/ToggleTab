@@ -6,7 +6,6 @@
   <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
 </p> <br>
 
-
 <p align="center">
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="280"/>
 </p>
@@ -20,7 +19,6 @@ dependencies {
     implementation "com.github.ocetin00:ToggleTab:1.0.0"
 }
 ```
-
 
 </details>
 
