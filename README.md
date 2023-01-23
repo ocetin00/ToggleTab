@@ -20,39 +20,12 @@ dependencies {
 
 ## How to Use
 
-### Create Balloon with Kotlin
-We can create an instance of the Balloon with the `Balloon.Builder` class.
+### Create ToggleTab
 
-```kotlin
-val balloon = Balloon.Builder(context)
-  .setWidthRatio(1.0f)
-  .setHeight(BalloonSizeSpec.WRAP)
-  .setText("Edit your profile here!")
-  .setTextColorResource(R.color.white_87)
-  .setTextSize(15f)
-  .setIconDrawableResource(R.drawable.ic_edit)
-  .setArrowPositionRules(ArrowPositionRules.ALIGN_ANCHOR)
-  .setArrowSize(10)
-  .setArrowPosition(0.5f)
-  .setPadding(12)
-  .setCornerRadius(8f)
-  .setBackgroundColorResource(R.color.skyBlue)
-  .setBalloonAnimation(BalloonAnimation.ELASTIC)
-  .setLifecycleOwner(lifecycle)
-  .build()
-```
-
-### Create Balloon with Kotlin DSL
-We can also create an instance of the Balloon with the Kotlin DSL.
-
-<details>
- <summary>Keep reading for more details</summary>
-
-You can create an instance of the Balloon with `createBalloon` as the example below:
 ```kotlin
     @Preview
     @Composable
-    fun ToggleTabPreview2() {
+    fun ToggleTabPreview1() {
         Row(
             horizontalArrangement = Arrangement.Center,
             modifier = Modifier
@@ -63,20 +36,19 @@ You can create an instance of the Balloon with `createBalloon` as the example be
         }
     }
 ```
-</details>
 
-### Create Balloon with Java
-You can create an instance of the Balloon with Java by using the `Balloon.Builder` class.
+
+
+### Create ToggleTab
+You can create toggle-tab with selected color,container color and text style
 
 <details>
  <summary>Keep reading for more details</summary>
 
-You can create an instance of the Balloon as the following example below: 
 ```kotlin
-Balloon balloon = new Balloon.Builder(context)
    @Preview
 @Composable
-fun ToggleTabPreview1() {
+fun ToggleTabPreview2() {
     var selectedPageIndex by remember {
         mutableStateOf(1)
     }
@@ -130,7 +102,6 @@ fun ToggleTabPreview1() {
 
 
 ## Find this library useful? :heart:
-:star: <br>
 Also, __[follow me](https://github.com/ocetin00)__ on GitHub for my next creations! 
 
 # License
