@@ -10,6 +10,7 @@
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp-Video-2023-01-22-at-21.08.08.gif" width="280"/>
 </p>
 
+## How to Use
 
 ### Gradle
 Add the dependency below to your **module**'s `build.gradle` file:
@@ -22,7 +23,6 @@ dependencies {
 
 </details>
 
-## How to Use
 
 ### Create ToggleTab
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Image%202023-01-22%20at%2021.23.12.jpeg" width="280"/>
@@ -111,7 +111,7 @@ fun ToggleTabPreview2() {
 
 
 ## Find this library useful? :heart:
-Also, __[follow me](https://github.com/ocetin00)__ on GitHub for my next creations! 
+__[follow me](https://github.com/ocetin00)__ on GitHub for my next creations! 
 
 # License
 ```xml
