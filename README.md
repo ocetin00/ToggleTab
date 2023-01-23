@@ -1,4 +1,4 @@
-<h1 align="center">Toggle-Tab </h1></br>
+<h1 align="center">ToggleTab </h1></br>
 
 <p align="center">
   </a><br>
