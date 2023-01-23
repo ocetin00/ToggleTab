@@ -14,7 +14,7 @@
 
 
 <p align="center">
-<img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Video%202023-01-22%20at%2021.08.08.mp4" width="280"/>
+https://github.com/ocetin00/temp/blob/main/WhatsApp%20Video%202023-01-22%20at%2021.08.08.mp4
 <img src="https://github.com/ocetin00/temp/blob/main/WhatsApp%20Image%202023-01-22%20at%2021.23.12.jpeg" width="280"/>
 </p>
 
